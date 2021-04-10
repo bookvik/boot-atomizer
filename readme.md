@@ -48,12 +48,12 @@ Require dependencies :
 ```clojure
 (set-env! :dependencies '[[zaeny/boot-atomizer "0.1.1"]])
 
-(require '[zaeny/boot-atomizer :refer [atomizer])
+(require '[zaeny.boot-atomizer :refer [atomizer]])
 ```
 add task atomizer :
 ```clojure
 (deftask dev []
-  (comp (watch) (atomizer))
+  (comp (watch) (atomizer)))
 
 ; robust way
 (deftask dev []  
